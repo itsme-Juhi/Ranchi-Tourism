@@ -35,8 +35,8 @@ class Marquee(tk.Canvas):
         # do again in a few milliseconds
         self.after_id = self.after(int(1000/self.fps), self.animate)
 
-video_name = "intro1.mp4" #This is your video file path
-video = imageio.get_reader(video_name)
+v_n = "intro1.mp4" #This is your video file path
+video = imageio.get_reader(v_n)
 
 def stream(label):
 
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     root.iconphoto(False, i1)
     Heading = tk.Label(text = "WELLCOME TO RANCHI TOURISM",font = "times 32 bold", bg = "black",fg ="yellow")
     Heading.pack()
-    marquee = Marquee(root, text="This Application is developed by Awanish Kumar for those who really intrested to explore the new Horizons of Ranchi the heart of Jharkhand", borderwidth=1, relief="sunken")
+    marquee = Marquee(root, text="This Application is developed by Juhi Kumari for those who really intrested to explore the new Horizons of Ranchi the heart of Jharkhand", borderwidth=1, relief="sunken")
     marquee.pack(side="top", fill="x", pady=20)
     my_label = tk.Label(root)
     my_label.pack()
